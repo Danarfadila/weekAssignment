@@ -694,10 +694,6 @@ video {
   left: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -1082,6 +1078,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:gap-40 {
+    gap: 10rem;
+  }
+
   .lg\:px-\[160px\] {
     padding-left: 160px;
     padding-right: 160px;

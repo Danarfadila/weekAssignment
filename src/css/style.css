@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .devs {
+    @apply font-black text-6xl md:text-7xl bg-gradient-to-r from-sky-900 to-pink-400 bg-clip-text text-transparent;
+  }
+  .jsbox,
+  .htmlbox,
+  .tailwindbox,
+  .vitebox,
+  .webpackbox {
+    @apply w-[320px] h-24 md:w-96 md:h-36 backdrop-blur-sm bg-white/50 drop-shadow-2xl rounded-lg flex items-center justify-center  font-bold text-slate-700 hover:-translate-y-10 duration-500 grayscale hover:grayscale-0;
+  }
+  .jstext,
+  .htmltext,
+  .tailwindtext,
+  .vitetext,
+  .webpacktext {
+    @apply pl-3 border-l-4 border-sky-700 text-sky-700 md:hidden lg:block;
+  }
+  .productText {
+    @apply md:text-5xl font-semibold text-slate-700;
+  }
+  .reveal,
+  .reveal2,
+  .reveal3 {
+    @apply relative translate-y-[150px] opacity-0 transition-all;
+  }
+  .reveal.active,
+  .reveal2.active,
+  .reveal3.active {
+    @apply translate-y-0 opacity-100 duration-1000;
+  }
+}
